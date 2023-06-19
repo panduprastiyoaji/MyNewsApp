@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My News</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="email_name">panduprastiyoaji@gmail.com</string>
+    <string name="about">Hii.., Welcome to MyNews App!</string>
+    <string name="title_activity_detail_home">DetailHomeActivity</string>
+    <string name="no_data">Empty data</string>
+    <string name="something_wrong">Oops.. something went wrong</string>
+    <string name="copyright">© Ndoee_Kun Store</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcomes">MyNews Apps</string>
+    <string name="text_Content">Content :</string>
+    <string name="text_Publish">Publish :</string>
+    <string name="text_Author">Author :</string>
+    <string name="text_Desc">Description :</string>
+    <string name="dark_mode">Dark Mode ON</string>
+    <string name="hint">Cari berita.., eg: Games</string>
+</resources>

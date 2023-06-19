@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title">#FFFFFFFF</color>
+    <color name="sub">#B3FFFFFF</color>
+    <color name="shadow_card">#662D3D4F</color>
+</resources>
