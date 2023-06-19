@@ -11,8 +11,6 @@ import com.example.mynews.R
 import com.example.mynews.core.data.Resources
 import com.example.mynews.core.ui.ListNewsAdapter
 import com.example.mynews.databinding.FragmentDashboardBinding
-import com.example.mynews.di.GlobalSingleton
-import com.example.mynews.di.GlobalSingletonListener
 import com.example.mynews.ui.detail.DetailNewsActivity
 import org.koin.android.viewmodel.ext.android.viewModel
 

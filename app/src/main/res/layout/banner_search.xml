@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/blue_day"
     tools:context=".MainActivity">
 
     <EditText
@@ -20,7 +19,8 @@
         android:minHeight="48dp"
         android:padding="10dp"
         android:textColor="@color/navi"
-        android:textColorHint="@color/blue_dark" />
+        android:textColorHint="@color/blue_dark"
+        android:autofillHints="" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/searchButton"
@@ -34,5 +34,6 @@
         app:fabCustomSize="40dp"
         app:maxImageSize="24dp"
         app:srcCompat="@drawable/baseline_search_24"
-        app:tint="@color/blue_day" />
+        app:tint="@color/blue_day"
+        tools:targetApi="lollipop" />
 </LinearLayout>

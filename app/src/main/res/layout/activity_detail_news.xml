@@ -50,7 +50,7 @@
         android:contentDescription="@string/menu_favorite"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@drawable/ic_favorite"
+        app:srcCompat="@drawable/ic_not_favorite_white"
         tools:ignore="ImageContrastCheck" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

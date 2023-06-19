@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -58,7 +59,9 @@
                     app:layout_constraintTop_toTopOf="@+id/about"
                     app:maxImageSize="40dp"
                     app:srcCompat="@drawable/baseline_email_24"
-                    app:tint="@color/blue_day" />
+                    app:tint="@color/blue_day"
+                    android:layout_marginRight="16dp"
+                    tools:targetApi="lollipop" />
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/imgProfile"

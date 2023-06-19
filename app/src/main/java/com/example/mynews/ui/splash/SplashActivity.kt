@@ -9,7 +9,6 @@ import com.example.mynews.MainActivity
 import com.example.mynews.databinding.ActivitySplashBinding
 import com.example.mynews.di.GlobalSingleton
 import com.example.mynews.di.GlobalSingletonListener
-
 class SplashActivity : AppCompatActivity() {
     private val listener = Listener()
     private lateinit var binding: ActivitySplashBinding

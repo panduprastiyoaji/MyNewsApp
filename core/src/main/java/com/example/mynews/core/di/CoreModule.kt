@@ -3,6 +3,7 @@ package com.example.mynews.core.di
 import net.sqlcipher.database.SQLiteDatabase
 import net.sqlcipher.database.SupportFactory
 import androidx.room.Room
+import com.example.mynews.core.BuildConfig
 import com.example.mynews.core.BuildConfig.API_KEY_NEWS
 import com.example.mynews.core.data.NewsRepository
 import com.example.mynews.core.data.sources.local.LocalDataSource
@@ -42,6 +43,11 @@ val networkModule = module {
             .add(hostname, "sha256/FEzVOUp4dF3gI0ZVPRJhFbSJVXR+uQmMH65xhs1glH4=")
             .add(hostname, "sha256/Y9mvm0exBk1JoQ57f9Vm28jKo5lFm/woKcVxrYxu80o=")
             .build()
+        val loggingInterceptor = if (BuildConfig.DEBUG) {
+            HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
+        } else {
+            HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.NONE)
+        }
         val interceptor = Interceptor { chain ->
             val addKey = chain.request().url.newBuilder()
                 .addQueryParameter("apiKey", API_KEY_NEWS)
@@ -52,7 +58,7 @@ val networkModule = module {
             chain.proceed(request)
         }
         OkHttpClient.Builder()
-            .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
+            .addInterceptor(loggingInterceptor)
             .addInterceptor(interceptor)
             .connectTimeout(120, TimeUnit.SECONDS)
             .readTimeout(120, TimeUnit.SECONDS)

@@ -9,8 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mynews.core.ui.FavoriteNewsAdapter
 import com.example.mynews.databinding.FragmentFavoriteBinding
-import com.example.mynews.di.GlobalSingleton
-import com.example.mynews.di.GlobalSingletonListener
 import com.example.mynews.ui.detail.DetailNewsActivity
 import com.example.mynews.favorite.di.favoriteModule
 import org.koin.android.viewmodel.ext.android.viewModel

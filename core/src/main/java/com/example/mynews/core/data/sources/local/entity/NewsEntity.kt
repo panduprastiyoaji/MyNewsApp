@@ -1,6 +1,5 @@
 package com.example.mynews.core.data.sources.local.entity
 
-import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -8,7 +7,6 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "news")
 data class NewsEntity(
     @PrimaryKey
-    @NonNull
     @ColumnInfo(name = "publishedAt")
     val publishedAt: String,
     @ColumnInfo(name = "author")

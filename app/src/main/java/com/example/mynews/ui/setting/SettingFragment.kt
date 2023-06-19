@@ -16,8 +16,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.mynews.R
 import com.example.mynews.databinding.FragmentSettingBinding
-import com.example.mynews.di.GlobalSingleton
-import com.example.mynews.di.GlobalSingletonListener
 import com.example.mynews.settingpreferences.SettingPreferences
 import com.example.mynews.settingpreferences.SettingViewModel
 import com.example.mynews.settingpreferences.ViewModelFactory
