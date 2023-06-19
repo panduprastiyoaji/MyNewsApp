@@ -17,6 +17,7 @@ class DetailNewsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailNewsBinding
     private val listener = Listener()
 
+    @Suppress("DEPRECATION")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailNewsBinding.inflate(layoutInflater)
